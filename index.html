@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juliana Yamaguchi | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal GitHub Pages site for Juliana Yamaguchi."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="container nav">
+        <a class="brand" href="#">Juliana Yamaguchi</a>
+        <a
+          class="button"
+          href="https://github.com/"
+          target="_blank"
+          rel="noreferrer"
+          >GitHub</a
+        >
+      </nav>
+
+      <section class="container hero-content">
+        <p class="eyebrow">GitHub Pages Starter</p>
+        <h1>Welcome to my website</h1>
+        <p>
+          This is a basic structure to publish HTML and CSS files online using
+          GitHub Pages.
+        </p>
+      </section>
+    </header>
+
+    <main class="container content">
+      <section class="card">
+        <h2>Next steps</h2>
+        <ul>
+          <li>Edit <code>index.html</code> with your content.</li>
+          <li>Customize <code>styles.css</code> with your visual style.</li>
+          <li>Add images to <code>assets/images/</code>.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <small>© <span id="year"></span> Juliana Yamaguchi</small>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
