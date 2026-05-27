@@ -26,6 +26,6 @@ Open `index.html` in your browser.
    - **Folder**: `/ (root)`
 4. Save and wait for deployment.
 5. Your site URL will be:
-   - `https://julianayamaguchi.github.io/`
+   - `https://jkyamaguchi.github.io/julianayamaguchi.github.io/`
 
 After deployment, editing `index.html` and `styles.css` and pushing changes will update the live site.
