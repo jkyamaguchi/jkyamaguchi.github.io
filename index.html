@@ -1,252 +1,370 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juliana Keiko Yamaguchi | Software Engineer</title>
-    <!-- Tailwind CSS for sleek, modern styling -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
     <!-- FontAwesome for professional icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Header / Hero Section -->
-    <header class="bg-slate-900 text-white py-16 px-4 shadow-md">
-        <div class="max-w-4xl mx-auto text-center md:text-left md:flex md:justify-between md:items-center">
-            <div>
-                <h1 class="text-4xl font-bold tracking-tight">Juliana Keiko Yamaguchi</h1>
-                <p class="text-xl text-emerald-400 font-medium mt-2">Backend-focused Software Engineer</p>
-                <p class="text-slate-400 mt-1"><i class="fa-solid fa-location-dot mr-2"></i>Copenhagen S, Denmark</p>
-            </div>
-            <!-- Quick Contact Links -->
-            <div class="mt-6 md:mt-0 flex flex-wrap justify-center md:justify-end gap-4 text-sm">
-                <a href="mailto:ju.yamaguchi@gmail.com" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg border border-slate-700 transition"><i class="fa-solid fa-envelope mr-2 text-emerald-400"></i>Email</a>
-                <a href="https://github.com/jkyamaguchi" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg border border-slate-700 transition"><i class="fa-brands fa-github mr-2 text-emerald-400"></i>GitHub</a>
-                <a href="https://www.linkedin.com/in/jkyamaguchi/" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg border border-slate-700 transition"><i class="fa-brands fa-linkedin mr-2 text-emerald-400"></i>LinkedIn</a>
-                <a href="tel:+4550220792" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg border border-slate-700 transition"><i class="fa-solid fa-phone mr-2 text-emerald-400"></i>+45 50 22 07 92</a>
-            </div>
+    <header class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1 class="hero-title">Juliana Keiko Yamaguchi</h1>
+          <p class="hero-subtitle">Backend-focused Software Engineer</p>
+          <p class="hero-location">
+            <i class="fa-solid fa-location-dot"></i>Copenhagen S, Denmark
+          </p>
         </div>
+        <!-- Quick Contact Links -->
+        <div class="contact-links">
+          <a href="mailto:ju.yamaguchi@gmail.com" class="contact-link"
+            ><i class="fa-solid fa-envelope"></i>Email</a
+          >
+          <a
+            href="https://github.com/jkyamaguchi"
+            target="_blank"
+            rel="noreferrer"
+            class="contact-link"
+            ><i class="fa-brands fa-github"></i>GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/jkyamaguchi/"
+            target="_blank"
+            rel="noreferrer"
+            class="contact-link"
+            ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+          >
+          <a href="tel:+4550220792" class="contact-link"
+            ><i class="fa-solid fa-phone"></i>+45 50 22 07 92</a
+          >
+        </div>
+      </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 py-12 space-y-12">
+    <main class="container page-content">
+      <!-- About Me Section -->
+      <section class="panel">
+        <h2 class="section-title"><i class="fa-solid fa-user"></i>About Me</h2>
+        <p class="section-copy">
+          Backend-focused Software Engineer with a Master’s in Computer Science
+          and experience building API-driven systems, relational databases, and
+          scalable architectures. Strong foundation in algorithms, distributed
+          systems, and clean code, with hands-on experience in Java/Spring and
+          growing expertise in C#/.NET. Motivated to contribute to
+          high-performance, mission-critical systems in a collaborative, agile
+          environment.
+        </p>
+      </section>
 
-        <!-- About Me Section -->
-        <section class="bg-white p-6 rounded-xl shadow-xs border border-slate-200">
-            <h2 class="text-2xl font-bold text-slate-900 border-b-2 border-emerald-500 pb-2 mb-4"><i class="fa-solid fa-user mr-2 text-slate-700"></i>About Me</h2>
-            <p class="text-slate-600 leading-relaxed">
-                Backend-focused Software Engineer with a Master’s in Computer Science and experience building API-driven systems, relational databases, and scalable architectures. Strong foundation in algorithms, distributed systems, and clean code, with hands-on experience in Java/Spring and growing expertise in C#/.NET. Motivated to contribute to high-performance, mission-critical systems in a collaborative, agile environment.
+      <!-- Technical Skills Section -->
+      <section>
+        <h2 class="section-title">
+          <i class="fa-solid fa-code"></i>Skills & Expertises
+        </h2>
+        <div class="grid three-col">
+          <div class="card">
+            <h3 class="card-title">Languages & Frameworks</h3>
+            <p class="small-copy">
+              Java, Spring Boot, JUnit, Hibernate/JPA, C# (basic), JavaScript
             </p>
-        </section>
-
-        <!-- Technical Skills Section -->
-        <section>
-            <h2 class="text-2xl font-bold text-slate-900 border-b-2 border-emerald-500 pb-2 mb-6"><i class="fa-solid fa-code mr-2 text-slate-700"></i>Skills & Expertises</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded-lg shadow-xs border border-slate-100">
-                    <h3 class="font-bold text-slate-800 mb-2">Languages & Frameworks</h3>
-                    <p class="text-sm text-slate-600">Java, Spring Boot, JUnit, Hibernate/JPA, C# (basic), JavaScript</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-xs border border-slate-100">
-                    <h3 class="font-bold text-slate-800 mb-2">Architecture & Methodologies</h3>
-                    <p class="text-sm text-slate-600">Clean Code, SOLID, Domain-Driven Design (DDD), MVC, Agile, Scrum, Kanban</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-xs border border-slate-100">
-                    <h3 class="font-bold text-slate-800 mb-2">Tools & DevOps</h3>
-                    <p class="text-sm text-slate-600">REST APIs, SQL, Relational Databases, GitHub Actions, CI/CD, Git, VS Code, Eclipse</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Timeline -->
-        <section>
-            <h2 class="text-2xl font-bold text-slate-900 border-b-2 border-emerald-500 pb-2 mb-6"><i class="fa-solid fa-briefcase mr-2 text-slate-700"></i>Professional Experience</h2>
-            <div class="space-y-6 relative before:absolute before:inset-0 before:left-4 before:w-0.5 before:bg-slate-200">
-                
-                <!-- Current/Recent Role -->
-                <div class="relative pl-8 group">
-                    <div class="absolute left-2.5 top-1.5 w-3 h-3 bg-emerald-500 rounded-full ring-4 ring-white group-hover:bg-emerald-600 transition"></div>
-                    <div class="bg-white p-5 rounded-lg shadow-xs border border-slate-200">
-                        <div class="flex flex-wrap justify-between items-start mb-2">
-                            <div>
-                                <h3 class="font-bold text-lg text-slate-900">Security Engineer Intern</h3>
-                                <p class="text-emerald-600 font-medium">Danske Bank — Application Security | Cyber Build</p>
-                            </div>
-                            <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2.5 py-1 rounded-sm mt-1 md:mt-0">Feb 2026 - Jul 2026</span>
-                        </div>
-                        <p class="text-sm text-slate-400 mb-2"><i class="fa-solid fa-location-dot mr-1"></i>Copenhagen, Denmark</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Configured GitHub Actions Workflow to run on a repository in an enterprise context.</li>
-                            <li>Deepened knowledge in SAST, SCA, CI/CD pipelines, and enterprise workflows.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Academic Experience -->
-                <div class="relative pl-8 group">
-                    <div class="absolute left-2.5 top-1.5 w-3 h-3 bg-slate-400 rounded-full ring-4 ring-white group-hover:bg-emerald-500 transition"></div>
-                    <div class="bg-white p-5 rounded-lg shadow-xs border border-slate-200">
-                        <div class="flex flex-wrap justify-between items-start mb-2">
-                            <div>
-                                <h3 class="font-bold text-lg text-slate-900">Professor of Computer Science</h3>
-                                <p class="text-emerald-600 font-medium">State University of Maringá <span class="text-xs text-slate-500">(Top 100 in Latin America)</span></p>
-                            </div>
-                            <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2.5 py-1 rounded-sm mt-1 md:mt-0">Sep 2010 - Feb 2020</span>
-                        </div>
-                        <p class="text-sm text-slate-400 mb-2"><i class="fa-solid fa-location-dot mr-1"></i>Paraná, Brazil</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Taught software architecture, API design, agile methodologies (Scrum, XP, Kanban), and clean code practices.</li>
-                            <li>Supervised student projects emphasizing maintainability, scalability, and performance.</li>
-                            <li>Guided teams on version control practices, secure coding, and software quality principles.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Backend Dev 1 -->
-                <div class="relative pl-8 group">
-                    <div class="absolute left-2.5 top-1.5 w-3 h-3 bg-slate-400 rounded-full ring-4 ring-white group-hover:bg-emerald-500 transition"></div>
-                    <div class="bg-white p-5 rounded-lg shadow-xs border border-slate-200">
-                        <div class="flex flex-wrap justify-between items-start mb-2">
-                            <div>
-                                <h3 class="font-bold text-lg text-slate-900">Backend Developer</h3>
-                                <p class="text-emerald-600 font-medium">Agile Tecnologia da Informação <span class="text-xs text-slate-500">(Startup)</span></p>
-                            </div>
-                            <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2.5 py-1 rounded-sm mt-1 md:mt-0">Jun 2007 - Feb 2008</span>
-                        </div>
-                        <p class="text-sm text-slate-400 mb-2"><i class="fa-solid fa-location-dot mr-1"></i>Paraná, Brazil</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Developed backend modules for academic systems using Java and Spring frameworks.</li>
-                            <li>Participated in code reviews, ensuring high-quality, maintainable solutions.</li>
-                            <li>Contributed actively to technical documentation and software testing processes.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Java Dev -->
-                <div class="relative pl-8 group">
-                    <div class="absolute left-2.5 top-1.5 w-3 h-3 bg-slate-400 rounded-full ring-4 ring-white group-hover:bg-emerald-500 transition"></div>
-                    <div class="bg-white p-5 rounded-lg shadow-xs border border-slate-200">
-                        <div class="flex flex-wrap justify-between items-start mb-2">
-                            <div>
-                                <h3 class="font-bold text-lg text-slate-900">Java Developer</h3>
-                                <p class="text-emerald-600 font-medium">Orion Soft Tecnologia Ltda. <span class="text-xs text-slate-500">(Startup)</span></p>
-                            </div>
-                            <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2.5 py-1 rounded-sm mt-1 md:mt-0">Jun 2005 - May 2007</span>
-                        </div>
-                        <p class="text-sm text-slate-400 mb-2"><i class="fa-solid fa-location-dot mr-1"></i>Paraná, Brazil</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Built robust enterprise applications utilizing Java, JSF, Spring, Hibernate, and JUnit.</li>
-                            <li>Applied Model-View-Controller (MVC) architectural patterns for modular and maintainable design.</li>
-                            <li>Collaborated within fast-paced agile teams to deliver production-ready backend solutions.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Personal & Highlighted Projects -->
-        <section>
-            <h2 class="text-2xl font-bold text-slate-900 border-b-2 border-emerald-500 pb-2 mb-6"><i class="fa-solid fa-folder-open mr-2 text-slate-700"></i>Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Project 1 -->
-                <div class="bg-white p-5 rounded-xl shadow-xs border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="text-emerald-500 mb-2 text-xl"><i class="fa-solid fa-chart-pie"></i></div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-2">Customer Segmentation</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Implements K-Means clustering algorithms to evaluate and classify customers into distinct, data-driven behavioral segments.</p>
-                    </div>
-                    <span class="text-xs text-slate-400 font-mono mt-4 block">Python / Machine Learning</span>
-                </div>
-                <!-- Project 2 -->
-                <div class="bg-white p-5 rounded-xl shadow-xs border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="text-emerald-500 mb-2 text-xl"><i class="fa-solid fa-film"></i></div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-2">Movies Collection</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">A clean-code decoupled architecture backend system built to expose REST APIs dealing with multimedia catalogs.</p>
-                    </div>
-                    <span class="text-xs text-slate-400 font-mono mt-4 block">Java / Spring Boot / REST API</span>
-                </div>
-                <!-- Project 3 -->
-                <div class="bg-white p-5 rounded-xl shadow-xs border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="text-emerald-500 mb-2 text-xl"><i class="fa-solid fa-palette"></i></div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-2">ArtGallery</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Mobile application engineered to gain hands-on environment execution experience leveraging native features.</p>
-                    </div>
-                    <span class="text-xs text-slate-400 font-mono mt-4 block">Kotlin / Android Platform</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education & Continuous Learning Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Formal Education -->
-            <section>
-                <h2 class="text-2xl font-bold text-slate-900 border-b-2 border-emerald-500 pb-2 mb-4"><i class="fa-solid fa-graduation-cap mr-2 text-slate-700"></i>Education</h2>
-                <div class="space-y-4">
-                    <div class="bg-white p-4 rounded-lg border border-slate-200">
-                        <span class="text-xs font-semibold text-emerald-600 block">Mar 2008 - Jun 2010</span>
-                        <h3 class="font-bold text-slate-900">Master's degree in Computer Science</h3>
-                        <p class="text-sm text-slate-600">State University of Maringá — Paraná, Brazil</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg border border-slate-200">
-                        <span class="text-xs font-semibold text-emerald-600 block">Jun 2003 - Feb 2008</span>
-                        <h3 class="font-bold text-slate-900">Bachelor's degree in Computer Science</h3>
-                        <p class="text-sm text-slate-600">State University of Maringá — Paraná, Brazil</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg border border-slate-200">
-                        <span class="text-xs font-semibold text-emerald-600 block">Nov 2021 - Jan 2022</span>
-                        <h3 class="font-bold text-slate-900">PhD Credits (7.5 ECTS)</h3>
-                        <p class="text-sm text-slate-600">University of Copenhagen — Denmark</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Continuous Learning & Certifications -->
-            <section>
-                <h2 class="text-2xl font-bold text-slate-900 border-b-2 border-emerald-500 pb-2 mb-4"><i class="fa-solid fa-book-open-reader mr-2 text-slate-700"></i>Continuous Learning</h2>
-                <div class="space-y-4">
-                    <div class="bg-white p-4 rounded-lg border border-slate-200">
-                        <span class="text-xs font-semibold text-emerald-600 block">Oct 2025 - Jun 2026</span>
-                        <h3 class="font-bold text-slate-900">Web Development — HackYourFuture</h3>
-                        <p class="text-xs text-slate-500 mb-1">Copenhagen, Denmark</p>
-                        <p class="text-xs text-slate-600">Web Architecture, HTML, CSS, modern JavaScript, version control, fullstack engineering frameworks.</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg border border-slate-200">
-                        <span class="text-xs font-semibold text-emerald-600 block">Sep 2025 - Dec 2025</span>
-                        <h3 class="font-bold text-slate-900">AI Intermediate — ReDI School</h3>
-                        <p class="text-xs text-slate-500 mb-1">Copenhagen, Denmark</p>
-                        <p class="text-xs text-slate-600">Data preparation, statistical analysis, Python ML libraries, Jupyter Notebook, and Azure AI infrastructure.</p>
-                    </div>
-                </div>
-            </section>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Architecture & Methodologies</h3>
+            <p class="small-copy">
+              Clean Code, SOLID, Domain-Driven Design (DDD), MVC, Agile, Scrum,
+              Kanban
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Tools & DevOps</h3>
+            <p class="small-copy">
+              REST APIs, SQL, Relational Databases, GitHub Actions, CI/CD, Git,
+              VS Code, Eclipse
+            </p>
+          </div>
         </div>
+      </section>
 
-        <!-- Languages & Extra Details -->
-        <section class="bg-slate-900 text-white p-6 rounded-xl">
-            <h2 class="text-xl font-bold border-b border-slate-700 pb-2 mb-4"><i class="fa-solid fa-language mr-2 text-emerald-400"></i>Languages</h2>
-            <div class="grid grid-cols-3 gap-4 text-center">
+      <!-- Experience Timeline -->
+      <section>
+        <h2 class="section-title">
+          <i class="fa-solid fa-briefcase"></i>Professional Experience
+        </h2>
+        <div class="timeline">
+          <!-- Current/Recent Role -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="item-head">
                 <div>
-                    <p class="font-semibold text-emerald-400">English</p>
-                    <p class="text-xs text-slate-400">Professional Proficiency</p>
+                  <h3 class="role-title">Security Engineer Intern</h3>
+                  <p class="company">
+                    Danske Bank — Application Security | Cyber Build
+                  </p>
                 </div>
-                <div>
-                    <p class="font-semibold text-emerald-400">Portuguese</p>
-                    <p class="text-xs text-slate-400">Native Speaker</p>
-                </div>
-                <div>
-                    <p class="font-semibold text-emerald-400">Danish</p>
-                    <p class="text-xs text-slate-400">Basic Level</p>
-                </div>
+                <span class="period">Feb 2026 - Jul 2026</span>
+              </div>
+              <p class="location-line">
+                <i class="fa-solid fa-location-dot"></i>Copenhagen, Denmark
+              </p>
+              <ul class="detail-list">
+                <li>
+                  Configured GitHub Actions Workflow to run on a repository in
+                  an enterprise context.
+                </li>
+                <li>
+                  Deepened knowledge in SAST, SCA, CI/CD pipelines, and
+                  enterprise workflows.
+                </li>
+              </ul>
             </div>
+          </div>
+
+          <!-- Academic Experience -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-muted"></div>
+            <div class="timeline-card">
+              <div class="item-head">
+                <div>
+                  <h3 class="role-title">Professor of Computer Science</h3>
+                  <p class="company">
+                    State University of Maringá
+                    <span class="meta-note">(Top 100 in Latin America)</span>
+                  </p>
+                </div>
+                <span class="period">Sep 2010 - Feb 2020</span>
+              </div>
+              <p class="location-line">
+                <i class="fa-solid fa-location-dot"></i>Paraná, Brazil
+              </p>
+              <ul class="detail-list">
+                <li>
+                  Taught software architecture, API design, agile methodologies
+                  (Scrum, XP, Kanban), and clean code practices.
+                </li>
+                <li>
+                  Supervised student projects emphasizing maintainability,
+                  scalability, and performance.
+                </li>
+                <li>
+                  Guided teams on version control practices, secure coding, and
+                  software quality principles.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Backend Dev 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-muted"></div>
+            <div class="timeline-card">
+              <div class="item-head">
+                <div>
+                  <h3 class="role-title">Backend Developer</h3>
+                  <p class="company">
+                    Agile Tecnologia da Informação
+                    <span class="meta-note">(Startup)</span>
+                  </p>
+                </div>
+                <span class="period">Jun 2007 - Feb 2008</span>
+              </div>
+              <p class="location-line">
+                <i class="fa-solid fa-location-dot"></i>Paraná, Brazil
+              </p>
+              <ul class="detail-list">
+                <li>
+                  Developed backend modules for academic systems using Java and
+                  Spring frameworks.
+                </li>
+                <li>
+                  Participated in code reviews, ensuring high-quality,
+                  maintainable solutions.
+                </li>
+                <li>
+                  Contributed actively to technical documentation and software
+                  testing processes.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Java Dev -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-muted"></div>
+            <div class="timeline-card">
+              <div class="item-head">
+                <div>
+                  <h3 class="role-title">Java Developer</h3>
+                  <p class="company">
+                    Orion Soft Tecnologia Ltda.
+                    <span class="meta-note">(Startup)</span>
+                  </p>
+                </div>
+                <span class="period">Jun 2005 - May 2007</span>
+              </div>
+              <p class="location-line">
+                <i class="fa-solid fa-location-dot"></i>Paraná, Brazil
+              </p>
+              <ul class="detail-list">
+                <li>
+                  Built robust enterprise applications utilizing Java, JSF,
+                  Spring, Hibernate, and JUnit.
+                </li>
+                <li>
+                  Applied Model-View-Controller (MVC) architectural patterns for
+                  modular and maintainable design.
+                </li>
+                <li>
+                  Collaborated within fast-paced agile teams to deliver
+                  production-ready backend solutions.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personal & Highlighted Projects -->
+      <section>
+        <h2 class="section-title">
+          <i class="fa-solid fa-folder-open"></i>Featured Projects
+        </h2>
+        <div class="grid three-col">
+          <!-- Project 1 -->
+          <div class="card project-card">
+            <div>
+              <div class="project-icon">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <h3 class="card-title">Customer Segmentation</h3>
+              <p class="small-copy">
+                Implements K-Means clustering algorithms to evaluate and
+                classify customers into distinct, data-driven behavioral
+                segments.
+              </p>
+            </div>
+            <span class="tag">Python / Machine Learning</span>
+          </div>
+          <!-- Project 2 -->
+          <div class="card project-card">
+            <div>
+              <div class="project-icon"><i class="fa-solid fa-film"></i></div>
+              <h3 class="card-title">Movies Collection</h3>
+              <p class="small-copy">
+                A clean-code decoupled architecture backend system built to
+                expose REST APIs dealing with multimedia catalogs.
+              </p>
+            </div>
+            <span class="tag">Java / Spring Boot / REST API</span>
+          </div>
+          <!-- Project 3 -->
+          <div class="card project-card">
+            <div>
+              <div class="project-icon">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3 class="card-title">ArtGallery</h3>
+              <p class="small-copy">
+                Mobile application engineered to gain hands-on environment
+                execution experience leveraging native features.
+              </p>
+            </div>
+            <span class="tag">Kotlin / Android Platform</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Continuous Learning Grid -->
+      <div class="grid two-col">
+        <!-- Formal Education -->
+        <section>
+          <h2 class="section-title">
+            <i class="fa-solid fa-graduation-cap"></i>Education
+          </h2>
+          <div class="stack">
+            <div class="card">
+              <span class="date">Mar 2008 - Jun 2010</span>
+              <h3 class="card-title">Master's degree in Computer Science</h3>
+              <p class="small-copy">
+                State University of Maringá — Paraná, Brazil
+              </p>
+            </div>
+            <div class="card">
+              <span class="date">Jun 2003 - Feb 2008</span>
+              <h3 class="card-title">Bachelor's degree in Computer Science</h3>
+              <p class="small-copy">
+                State University of Maringá — Paraná, Brazil
+              </p>
+            </div>
+            <div class="card">
+              <span class="date">Nov 2021 - Jan 2022</span>
+              <h3 class="card-title">PhD Credits (7.5 ECTS)</h3>
+              <p class="small-copy">University of Copenhagen — Denmark</p>
+            </div>
+          </div>
         </section>
 
+        <!-- Continuous Learning & Certifications -->
+        <section>
+          <h2 class="section-title">
+            <i class="fa-solid fa-book-open-reader"></i>Continuous Learning
+          </h2>
+          <div class="stack">
+            <div class="card">
+              <span class="date">Oct 2025 - Jun 2026</span>
+              <h3 class="card-title">Web Development — HackYourFuture</h3>
+              <p class="meta-note">Copenhagen, Denmark</p>
+              <p class="small-copy">
+                Web Architecture, HTML, CSS, modern JavaScript, version control,
+                fullstack engineering frameworks.
+              </p>
+            </div>
+            <div class="card">
+              <span class="date">Sep 2025 - Dec 2025</span>
+              <h3 class="card-title">AI Intermediate — ReDI School</h3>
+              <p class="meta-note">Copenhagen, Denmark</p>
+              <p class="small-copy">
+                Data preparation, statistical analysis, Python ML libraries,
+                Jupyter Notebook, and Azure AI infrastructure.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Languages & Extra Details -->
+      <section class="languages panel-dark">
+        <h2 class="section-title section-title-dark">
+          <i class="fa-solid fa-language"></i>Languages
+        </h2>
+        <div class="grid three-col text-center">
+          <div>
+            <p class="lang-name">English</p>
+            <p class="lang-level">Professional Proficiency</p>
+          </div>
+          <div>
+            <p class="lang-name">Portuguese</p>
+            <p class="lang-level">Native Speaker</p>
+          </div>
+          <div>
+            <p class="lang-name">Danish</p>
+            <p class="lang-level">Basic Level</p>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="text-center text-xs text-slate-400 py-8 border-t border-slate-200 mt-12">
-        <p>&copy; 2026 Juliana Keiko Yamaguchi. Built and hosted via GitHub Pages.</p>
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Juliana Keiko Yamaguchi. Built and hosted via GitHub Pages.
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
